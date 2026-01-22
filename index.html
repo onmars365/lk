@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朗坤智能科技 - 专业智能制造企业</title>
+    <title>朗坤 - 提供教育用品、儿童玩具、户外用品和宠物用品的OEM/ODM定制服务及智能制造企业</title>
     
     <!-- 网站描述 -->
-    <meta name="description" content="湖北朗坤智能科技有限公司是一家专注于智能制造的企业，提供教育用品、玩具、户外用品和宠物用品的OEM/ODM定制服务。朗坤产业园集研发创新、智能制造、业态协同于一体，服务全球上千家客户。">
-    <meta name="keywords" content="朗坤智能科技,智能制造,教育用品,玩具,OEM定制,ODM定制,湖北制造,产业园">
+    <meta name="description" content="湖北朗坤智能科技有限公司是一家专注于智能制造的企业，提供教育用品、儿童玩具、户外用品和宠物用品的OEM/ODM定制服务。朗坤产业园集研发创新、智能制造、业态协同于一体，服务全球上千家客户。">
+    <meta name="keywords" content="朗坤,湖北朗坤智能科技有限公司,智能制造,教育用品,儿童玩具,OEM定制,ODM定制,湖北制造,朗坤产业园">
     <meta name="author" content="湖北朗坤智能科技有限公司">
     
     <!-- Favicon图标 - 各种尺寸 -->
@@ -20,29 +20,29 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://elangkun.com/512-512b.png">
     
     <!-- 社交分享缩略图 (Open Graph) -->
-    <meta property="og:title" content="朗坤智能科技 - 专业智能制造企业">
-    <meta property="og:description" content="湖北朗坤智能科技有限公司是一家专注于智能制造的企业，提供教育用品、玩具、户外用品和宠物用品的OEM/ODM定制服务。">
+    <meta property="og:title" content="朗坤">
+    <meta property="og:description" content="湖北朗坤智能科技有限公司是一家专注于智能制造的企业，提供教育用品、儿童玩具、户外用品和宠物用品的OEM/ODM定制服务。">
     <meta property="og:image" content="https://elangkun.com/1200-1200.png">
     <meta property="og:url" content="https://www.elangkun.com">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="朗坤智能科技">
+    <meta property="og:site_name" content="朗坤">
     
     <!-- Twitter卡片 -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="朗坤智能科技 - 专业智能制造企业">
-    <meta name="twitter:description" content="湖北朗坤智能科技有限公司是一家专注于智能制造的企业，提供教育用品、玩具、户外用品和宠物用品的OEM/ODM定制服务。">
+    <meta name="twitter:title" content="朗坤">
+    <meta name="twitter:description" content="湖北朗坤智能科技有限公司是一家专注于智能制造的企业，提供教育用品、儿童玩具、户外用品和宠物用品的OEM/ODM定制服务。">
     <meta name="twitter:image" content="https://elangkun.com/1200-1200.png">
     
     <!-- 添加到手机桌面配置 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="朗坤科技">
+    <meta name="apple-mobile-web-app-title" content="朗坤">
     <link rel="apple-touch-startup-image" href="https://elangkun.com/1200-1200.png">
     
     <!-- Android添加到主屏幕 -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#004aad">
-    <meta name="application-name" content="朗坤科技">
+    <meta name="application-name" content="朗坤">
     
     <!-- PWA配置 -->
     <link rel="manifest" href="/manifest.json">
@@ -105,7 +105,7 @@
             display: flex;
             align-items: center;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 24px;
             color: var(--primary-blue);
         }
         
@@ -442,29 +442,46 @@
             object-fit: contain;
         }
         
-        /* 招聘 */
+        /* 招聘 - 修改为两列布局 */
         .job-list {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
         }
         
         .job-item {
             background-color: white;
             border-left: 4px solid var(--primary-blue);
             padding: 25px;
-            margin-bottom: 20px;
             box-shadow: 0 5px 15px rgba(0, 74, 173, 0.05);
             border-radius: 0 8px 8px 0;
             transition: transform 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         
         .job-item:hover {
-            transform: translateX(5px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 74, 173, 0.12);
         }
         
         .job-title {
             color: var(--primary-blue);
             margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .job-description {
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+        
+        .job-button {
+            margin-top: auto;
+            align-self: flex-start;
         }
         
         /* 联系我们 - 新布局 */
@@ -472,7 +489,6 @@
             display: flex;
             flex-wrap: wrap;
             gap: 40px;
-            margin-bottom: 40px; /* 增加底部间距 */
         }
         
         .contact-info {
@@ -582,8 +598,8 @@
         }
         
         .qr-code {
-            width: 120px;
-            height: 120px;
+            width: 190px;
+            height: 206px;
             border-radius: 8px;
             overflow: hidden;
             margin-top: 10px;
@@ -777,6 +793,11 @@
                 max-width: 100%; /* 平板和手机上恢复全宽 */
                 min-width: 100%;
             }
+            
+            /* 平板设备上保持两列布局 */
+            .job-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
         @media (max-width: 768px) {
@@ -826,6 +847,12 @@
             .contact-info {
                 order: 2; /* 在移动端将联系信息放在下面 */
             }
+            
+            /* 移动端改为单列布局 */
+            .job-list {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -850,8 +877,8 @@
 <body>
     <!-- 顶部信息栏 -->
     <div class="info-bar">
-        <span class="chinese">欢迎来到朗坤！</span>
-        <span class="english">Welcome to Elangkun Intelligent Technology Co., Ltd!</span>
+        <span class="chinese">欢迎来到湖北朗坤智能科技有限公司！</span>
+        <span class="english">Welcome to Hubei Langkun Intelligent Technology Co., Ltd.!</span>
     </div>
     
     <!-- 导航栏 -->
@@ -886,15 +913,15 @@
     
     <!-- 轮播图 -->
     <section class="slider" id="home">
-        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+        <div class="slide active" style="background-image: url('https://elangkun.com/1.jpg');">
             <h2 class="chinese">朗坤产业园 · 智能制造新标杆</h2>
             <h2 class="english">langkun Industrial Park · New Benchmark for Smart Manufacturing</h2>
-            <p class="chinese">聚焦教育用品、玩具、户外用品、宠物用品四大核心品类，服务全球上千家客户</p>
+            <p class="chinese">聚焦教育用品、儿童玩具、户外用品、宠物用品四大核心品类，服务全球上千家客户</p>
             <p class="english">Focusing on four core categories: educational supplies, toys, outdoor products, and pet supplies, serving thousands of customers worldwide</p>
             <a href="#contact" class="cta-button chinese">联系我们</a>
             <a href="#contact" class="cta-button english">Contact Us</a>
         </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+        <div class="slide" style="background-image: url('https://elangkun.com/1.jpg');">
             <h2 class="chinese">专业OEM/ODM定制化服务</h2>
             <h2 class="english">Professional OEM/ODM Customization Services</h2>
             <p class="chinese">凭借成熟的供应链体系与品质管控标准，为全球客户提供优质产品</p>
@@ -902,7 +929,7 @@
             <a href="#services" class="cta-button chinese">了解服务</a>
             <a href="#services" class="cta-button english">Our Services</a>
         </div>
-        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+        <div class="slide" style="background-image: url('https://elangkun.com/1.jpg');">
             <h2 class="chinese">现代化综合产业园区</h2>
             <h2 class="english">Modern Integrated Industrial Park</h2>
             <p class="chinese">占地21亩，总投资1.2亿元，集研发创新、智能制造、业态协同于一体</p>
@@ -927,10 +954,10 @@
             <div class="intro-left">
                 <div class="intro-text">
                     <p class="chinese">
-                        朗坤产业园（建设中）由湖北朗坤智能科技有限公司倾力打造，是一座集研发创新、智能制造、业态协同于一体的现代化综合产业园区。园区总占地21亩（约14000平方米），总投资1.2亿元，建成后可吸纳用工300余人，预计每年为地方贡献税收超千万元。园区聚焦教育用品、玩具、户外用品、宠物用品四大核心品类，深度整合研发与生产链路，具备强大的OEM/ODM定制化能力。凭借成熟的供应链体系与品质管控标准，公司已服务国内外上千家客户，业务版图覆盖全球市场。
+                        朗坤产业园（建设中）是湖北朗坤智能科技有限公司倾力打造，一座集研发创新、智能制造、业态协同于一体的现代化综合产业园区。园区总占地21亩（约14000平方米），总投资1.2亿元，建成后可吸纳用工300余人，预计每年为地方贡献税收超千万元。园区聚焦教育用品、玩具、户外用品、宠物用品四大核心品类，深度整合研发与生产链路，具备强大的OEM/ODM定制化能力。凭借成熟的供应链体系与品质管控标准，公司已服务国内外上千家客户，业务版图覆盖全球市场。
                     </p>
                     <p class="english">
-                        Elangkun Industrial Park (under construction) is a modern integrated industrial park built by Hubei Elangkun Intelligent Technology Co., Ltd., integrating R&D innovation, smart manufacturing, and business collaboration. The park covers a total area of 21 acres (approximately 14,000 square meters) with a total investment of 120 million RMB. Upon completion, it will employ over 300 people and is expected to contribute over 10 million RMB in local taxes annually. The park focuses on four core categories: educational supplies, toys, outdoor products, and pet supplies, deeply integrating R&D and production chains with strong OEM/ODM customization capabilities. With a mature supply chain system and quality control standards, the company has served thousands of domestic and international customers, with business covering global markets.
+                        langkun Industrial Park (under construction) is a modern integrated industrial park built by Hubei Langkun Intelligent Technology Co., Ltd., integrating R&D innovation, smart manufacturing, and business collaboration. The park covers a total area of 21 acres (approximately 14,000 square meters) with a total investment of 120 million RMB. Upon completion, it will employ over 300 people and is expected to contribute over 10 million RMB in local taxes annually. The park focuses on four core categories: educational supplies, toys, outdoor products, and pet supplies, deeply integrating R&D and production chains with strong OEM/ODM customization capabilities. With a mature supply chain system and quality control standards, the company has served thousands of domestic and international customers, with business covering global markets.
                     </p>
                 </div>
                 
@@ -959,10 +986,10 @@
             </div>
             
             <div class="intro-image">
-                <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="朗坤产业园大楼">
+                <img src="https://elangkun.com/b.jpg" alt="朗坤产业园大楼">
                 <div class="image-overlay">
                     <div class="image-title chinese">朗坤大楼</div>
-                    <div class="image-title english">Elangkun Industrial Park Building</div>
+                    <div class="image-title english">langkun Industrial Park Building</div>
                     <div class="image-subtitle chinese">现代化综合产业园区</div>
                     <div class="image-subtitle english">Modern Integrated Industrial Park</div>
                 </div>
@@ -972,7 +999,7 @@
     
     <!-- 生产产品 -->
     <section class="section" id="products">
-        <h2 class="section-title chinese">产品中心</h2>
+        <h2 class="section-title chinese">生产产品</h2>
         <h2 class="section-title english">Our Products</h2>
         
         <div class="products-grid">
@@ -1110,31 +1137,77 @@
             <div class="job-item">
                 <h3 class="job-title chinese">财务经理</h3>
                 <h3 class="job-title english">Finance Manager</h3>
-                <p class="chinese">
-                    <strong>职位描述：</strong>负责公司财务管理工作，包括预算编制、成本控制、财务分析等。要求具备5年以上财务管理经验，熟悉制造业财务流程，持有相关专业资格证书者优先。
-                </p>
-                <p class="english">
-                    <strong>Job Description:</strong> Responsible for the company's financial management work, including budget preparation, cost control, financial analysis, etc. Requires over 5 years of financial management experience, familiarity with manufacturing financial processes, and professional qualifications preferred.
-                </p>
-                <p class="chinese"><strong>工作地点：</strong>湖北蕲春</p>
-                <p class="english"><strong>Location:</strong> Qichun, Hubei</p>
-                <a href="#contact" class="cta-button chinese" style="padding: 8px 20px; font-size: 0.9rem;">申请职位</a>
-                <a href="#contact" class="cta-button english" style="padding: 8px 20px; font-size: 0.9rem;">Apply Now</a>
+                <div class="job-description">
+                    <p class="chinese">
+                        <strong>职位描述：</strong>负责公司财务管理工作，包括预算编制、成本控制、财务分析等。要求具备5年以上财务管理经验，熟悉制造业财务流程，持有相关专业资格证书者优先。
+                    </p>
+                    <p class="english">
+                        <strong>Job Description:</strong> Responsible for the company's financial management work, including budget preparation, cost control, financial analysis, etc. Requires over 5 years of financial management experience, familiarity with manufacturing financial processes, and professional qualifications preferred.
+                    </p>
+                    <p class="chinese"><strong>工作地点：</strong>湖北蕲春</p>
+                    <p class="english"><strong>Location:</strong> Qichun, Hubei</p>
+                </div>
+                <div class="job-button">
+                    <a href="#contact" class="cta-button chinese" style="padding: 8px 20px; font-size: 0.9rem;">申请职位</a>
+                    <a href="#contact" class="cta-button english" style="padding: 8px 20px; font-size: 0.9rem;">Apply Now</a>
+                </div>
             </div>
             
             <div class="job-item">
                 <h3 class="job-title chinese">生产主管</h3>
                 <h3 class="job-title english">Production Supervisor</h3>
-                <p class="chinese">
-                    <strong>职位描述：</strong>负责生产线管理与优化，确保生产计划按时完成，提升生产效率与产品质量。要求3年以上制造业生产管理经验。
-                </p>
-                <p class="english">
-                    <strong>Job Description:</strong> Responsible for production line management and optimization, ensuring production plans are completed on time, and improving production efficiency and product quality. Requires over 3 years of manufacturing production management experience.
-                </p>
-                <p class="chinese"><strong>工作地点：</strong>湖北蕲春</p>
-                <p class="english"><strong>Location:</strong> Qichun, Hubei</p>
-                <a href="#contact" class="cta-button chinese" style="padding: 8px 20px; font-size: 0.9rem;">申请职位</a>
-                <a href="#contact" class="cta-button english" style="padding: 8px 20px; font-size: 0.9rem;">Apply Now</a>
+                <div class="job-description">
+                    <p class="chinese">
+                        <strong>职位描述：</strong>负责生产线管理与优化，确保生产计划按时完成，提升生产效率与产品质量。要求3年以上制造业生产管理经验。
+                    </p>
+                    <p class="english">
+                        <strong>Job Description:</strong> Responsible for production line management and optimization, ensuring production plans are completed on time, and improving production efficiency and product quality. Requires over 3 years of manufacturing production management experience.
+                    </p>
+                    <p class="chinese"><strong>工作地点：</strong>湖北蕲春</p>
+                    <p class="english"><strong>Location:</strong> Qichun, Hubei</p>
+                </div>
+                <div class="job-button">
+                    <a href="#contact" class="cta-button chinese" style="padding: 8px 20px; font-size: 0.9rem;">申请职位</a>
+                    <a href="#contact" class="cta-button english" style="padding: 8px 20px; font-size: 0.9rem;">Apply Now</a>
+                </div>
+            </div>
+            
+            <div class="job-item">
+                <h3 class="job-title chinese">质量检测员</h3>
+                <h3 class="job-title english">Quality Inspector</h3>
+                <div class="job-description">
+                    <p class="chinese">
+                        <strong>职位描述：</strong>负责产品质量检测与控制，确保产品符合质量标准。要求熟悉质量管理体系，有1年以上相关经验。
+                    </p>
+                    <p class="english">
+                        <strong>Job Description:</strong> Responsible for product quality inspection and control, ensuring products meet quality standards. Requires familiarity with quality management systems and over 1 year of relevant experience.
+                    </p>
+                    <p class="chinese"><strong>工作地点：</strong>湖北蕲春</p>
+                    <p class="english"><strong>Location:</strong> Qichun, Hubei</p>
+                </div>
+                <div class="job-button">
+                    <a href="#contact" class="cta-button chinese" style="padding: 8px 20px; font-size: 0.9rem;">申请职位</a>
+                    <a href="#contact" class="cta-button english" style="padding: 8px 20px; font-size: 0.9rem;">Apply Now</a>
+                </div>
+            </div>
+            
+            <div class="job-item">
+                <h3 class="job-title chinese">研发工程师</h3>
+                <h3 class="job-title english">R&D Engineer</h3>
+                <div class="job-description">
+                    <p class="chinese">
+                        <strong>职位描述：</strong>负责新产品研发与设计，跟进项目进度，解决技术难题。要求具备箱包设计或相关专业背景，2年以上产品研发经验。
+                    </p>
+                    <p class="english">
+                        <strong>Job Description:</strong> Responsible for new product R&D and design, tracking project progress, and solving technical problems. Requires background in mechanical design or related fields, with over 2 years of product R&D experience.
+                    </p>
+                    <p class="chinese"><strong>工作地点：</strong>湖北蕲春</p>
+                    <p class="english"><strong>Location:</strong> Qichun, Hubei</p>
+                </div>
+                <div class="job-button">
+                    <a href="#contact" class="cta-button chinese" style="padding: 8px 20px; font-size: 0.9rem;">申请职位</a>
+                    <a href="#contact" class="cta-button english" style="padding: 8px 20px; font-size: 0.9rem;">Apply Now</a>
+                </div>
             </div>
         </div>
     </section>
@@ -1158,7 +1231,7 @@
                         <div>
                             <h4 class="chinese">电话</h4>
                             <h4 class="english">Phone</h4>
-                            <p>18676718916</p>
+                            <p>13128810302</p>
                         </div>
                     </div>
                     
@@ -1169,7 +1242,7 @@
                         <div>
                             <h4 class="chinese">邮箱</h4>
                             <h4 class="english">Email</h4>
-                            <p>info@elangkun.com</p>
+                            <p>sales@elangkun.com</p>
                         </div>
                     </div>
                     
@@ -1192,7 +1265,7 @@
                 <div class="map-placeholder">
                     <i class="fas fa-map-marked-alt"></i>
                     <p class="chinese">湖北蕲春沙河南路8号</p>
-                    <p class="english">No. 8 Shahe South Road, Qichun, Hubei</p>
+                    <p class="english">No. 8 Shahe South Road, Qichun, Hubei</p><a href="https://www.amap.com/search?id=BZA4PO002E&city=421126&geoobj=113.804082%7C22.381644%7C114.528878%7C22.726086&query_type=IDQ&query=%E6%B2%99%E6%B2%B3%E8%B7%AF&zoom=11.45" target="_blank"><img src="https://elangkun.com/dt.png" alt="400×300"></a>
                     <p class="chinese" style="margin-top: 15px; font-size: 0.9rem;">点击查看地图位置</p>
                     <p class="english" style="margin-top: 15px; font-size: 0.9rem;">Click to view map location</p>
                 </div>
@@ -1209,12 +1282,12 @@
                     <h4 class="social-media-name chinese">微信视频号</h4>
                     <h4 class="social-media-name english">WeChat Video</h4>
                     <div class="social-media-account">
-                        <span class="chinese">@朗坤智能科技</span>
-                        <span class="english">@Elangkun Tech</span>
+                        <span class="chinese"><a href="https://elangkun.com" target="_blank">@蕲春朗坤</a></span>
+                        <span class="english">@elangkun</span>
                     </div>
                     <div class="qr-code">
                         <div class="qr-code-placeholder">
-                            <i class="fas fa-qrcode"></i>
+                            <img src="https://elangkun.com/sph.png" alt="">
                             <span class="chinese">扫描关注</span>
                             <span class="english">Scan to follow</span>
                         </div>
@@ -1228,12 +1301,12 @@
                     <h4 class="social-media-name chinese">抖音</h4>
                     <h4 class="social-media-name english">Douyin/TikTok</h4>
                     <div class="social-media-account">
-                        <span class="chinese">@朗坤智能科技</span>
-                        <span class="english">@Elangkun Tech</span>
+                        <span class="chinese"><a href="https://www.douyin.com/user/MS4wLjABAAAAhvIoi4VfNa92AvDRMeGfYhwU1ZoqDh8RI1qfB51t1wIKgGatZfwRB25rgHhRl4OF?from_tab_name=main" target="_blank">@蕲春朗坤</a></span>
+                        <span class="english">@elangkun</span>
                     </div>
                     <div class="qr-code">
                         <div class="qr-code-placeholder">
-                            <i class="fas fa-qrcode"></i>
+                            <img src="https://elangkun.com/dy.png" alt="">
                             <span class="chinese">扫描关注</span>
                             <span class="english">Scan to follow</span>
                         </div>
@@ -1247,12 +1320,12 @@
                     <h4 class="social-media-name chinese">微博</h4>
                     <h4 class="social-media-name english">Weibo</h4>
                     <div class="social-media-account">
-                        <span class="chinese">@朗坤智能科技</span>
-                        <span class="english">@Elangkun Tech</span>
+                        <span class="chinese"><a href="https://weibo.com/elangkun" target="_blank">@蕲春朗坤</a></span>
+                        <span class="english">@elangkun</span>
                     </div>
                     <div class="qr-code">
                         <div class="qr-code-placeholder">
-                            <i class="fas fa-qrcode"></i>
+                            <img src="https://elangkun.com/wb.png" alt="">
                             <span class="chinese">扫描关注</span>
                             <span class="english">Scan to follow</span>
                         </div>
@@ -1261,17 +1334,19 @@
                 
                 <div class="social-media-card xiaohongshu">
                     <div class="social-media-icon">
-                        <i class="fab fa-xiaohongshu"></i>
+                        <i class="fab fa-xiaohongshu"><svg class="xiaohongshu-icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+</svg></i>
                     </div>
                     <h4 class="social-media-name chinese">小红书</h4>
                     <h4 class="social-media-name english">Xiaohongshu</h4>
                     <div class="social-media-account">
-                        <span class="chinese">@朗坤智能科技</span>
-                        <span class="english">@Elangkun Tech</span>
+                        <span class="chinese"><a href="https://www.xiaohongshu.com/user/profile/651d4843000000002302572b?m_source=itab" target="_blank">@蕲春朗坤</a></span>
+                        <span class="english">@elangkun</span>
                     </div>
                     <div class="qr-code">
                         <div class="qr-code-placeholder">
-                            <i class="fas fa-qrcode"></i>
+                            <img src="https://elangkun.com/xhs.png" alt="">
                             <span class="chinese">扫描关注</span>
                             <span class="english">Scan to follow</span>
                         </div>
@@ -1298,7 +1373,7 @@
                 <a href="#home" class="english">Home</a>
                 <a href="#intro" class="chinese">公司介绍</a>
                 <a href="#intro" class="english">About</a>
-                <a href="#products" class="chinese">生产产品</a>
+                <a href="#products" class="chinese">产品中心</a>
                 <a href="#products" class="english">Products</a>
             </div>
             
@@ -1319,7 +1394,7 @@
         
         <div class="copyright">
             <p class="chinese">© 2026 湖北朗坤智能科技有限公司 elangkun.com 版权所有</p>
-            <p class="english">© 2026 Hubei Elangkun Intelligent Technology Co., Ltd. elangkun.com All Rights Reserved</p>
+            <p class="english">© 2026 Hubei Langkun Intelligent Technology Co., Ltd. elangkun.com All Rights Reserved</p>
         </div>
     </footer>
     
@@ -1402,72 +1477,5 @@
             }
         });
     </script>
-    
-    <!-- PWA manifest文件内容（注释形式，实际使用时需要创建manifest.json文件） -->
-    <!-- 
-    创建manifest.json文件，内容如下：
-    {
-      "name": "朗坤科技",
-      "short_name": "朗坤",
-      "description": "湖北朗坤智能科技有限公司官方网站",
-      "start_url": "/",
-      "display": "standalone",
-      "background_color": "#004aad",
-      "theme_color": "#004aad",
-      "icons": [
-        {
-          "src": "/logo.svg",
-          "sizes": "96x96",
-          "type": "image/svg+xml"
-        },
-        {
-          "src": "/logo-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        },
-        {
-          "src": "/logo-512.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        }
-      ]
-    }
-    -->
-    
-    <!-- PWA服务工作者文件内容（注释形式，实际使用时需要创建sw.js文件） -->
-    <!-- 
-    创建sw.js文件，内容如下：
-    const CACHE_NAME = 'elangkun-cache-v1';
-    const urlsToCache = [
-      '/',
-      '/index.html',
-      '/styles.css',
-      '/script.js',
-      '/logo.svg',
-      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
-    ];
-
-    self.addEventListener('install', function(event) {
-      event.waitUntil(
-        caches.open(CACHE_NAME)
-          .then(function(cache) {
-            return cache.addAll(urlsToCache);
-          })
-      );
-    });
-
-    self.addEventListener('fetch', function(event) {
-      event.respondWith(
-        caches.match(event.request)
-          .then(function(response) {
-            if (response) {
-              return response;
-            }
-            return fetch(event.request);
-          }
-        )
-      );
-    });
-    -->
 </body>
 </html>
